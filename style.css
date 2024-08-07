@@ -1,0 +1,219 @@
+body{
+    margin: 0;
+    cursor: default;
+    overflow-x: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.cp{
+    cursor: pointer;
+}
+
+#loadingScreenCover{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 1000;
+    display: none;
+}
+
+#loadingContainer{
+    width: fit-content;
+    margin: 30vh auto 0 auto;
+    padding: 10px;
+    background-color: rgb(30, 30, 30);
+    border: 1px solid rgb(22, 192, 0);
+    border-radius: 10px;
+}
+
+.loadingDotsContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.loadingDot{
+    width: 10px;
+    height: 10px;
+    background-color: rgb(22, 192, 0);
+    border-radius: 10px;
+    margin: 0 10px;
+    transition: opacity 0.3s ease;
+}
+
+.hiddenInput{
+    visibility: hidden;
+    position: fixed;
+    pointer-events: none;
+}
+
+/*--MARGINS--*/
+
+.mt1{
+    margin-top: 10px;
+}
+.mt2{
+    margin-top: 20px;
+}
+.mt3{
+    margin-top: 30px;
+}
+
+.ml1{
+    margin-left: 10px;
+}
+
+/*--MARGINS--*/
+
+/*--IMAGES--*/
+
+.img{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo{
+    background-image: url('logo.PNG');
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.logoText{
+    position: absolute;
+    right: -140px;
+}
+
+/*--IMAGES--*/
+
+/*--COLORS--*/
+
+.white{
+    color: white;
+}
+
+.grey{
+    color: gray;
+}
+
+.green{
+    color: rgb(22, 192, 0);
+}
+
+/*--COLORS--*/
+
+/*--FONTS--*/
+
+.font1{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.font2{
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.font3{
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.font4{
+    font-size: 17.5px;
+    font-weight: 350;
+}
+
+.font5{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/*--FONTS--*/
+
+/*--BUTTONS--*/
+
+.button1{
+    border-radius: 23px;
+    padding: 7px 10px;
+    border: 1px solid rgb(22, 192, 0);
+    color: rgb(22, 192, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.button1:hover{
+    background-color: rgb(50, 50, 50);
+}
+
+.button2{
+    color: black;
+    padding: 7px 10px;
+    background-color: rgb(22, 192, 0);
+    border-radius: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.button2:hover{
+    background-color: rgb(30, 255, 0);
+}
+
+.button3{
+    color: black;
+    padding: 7px 10px;
+    background-color: rgb(22, 192, 0);
+    border-radius: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    border: none;
+    width: 100%;
+}
+.button3:hover{
+    background-color: rgb(30, 255, 0);
+}
+
+.button4{
+    color: black;
+    padding: 7px 10px;
+    background-color: grey;
+    border-radius: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.button4:hover{
+    background-color: rgb(148, 148, 148);
+}
+
+.button5{
+    border-radius: 23px;
+    padding: 7px 10px;
+    border: 1px solid rgb(22, 192, 0);
+    color: rgb(22, 192, 0);
+    background-color: rgb(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin: 0 auto;
+}
+.button5:hover{
+    background-color: rgb(50, 50, 50);
+}
+
+/*--BUTTONS--*/

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="homeStyle.css">
+</head>
+<body>
+
+    <!------------------------ LOADING ------------------------->
+    <div id="loadingScreenCover">
+        <div id="loadingContainer">
+            <div class="font2 grey">Loading</div>
+            <div class="loadingDotsContainer">
+                <div class="loadingDot" id="loadingDot1"></div>
+                <div class="loadingDot" id="loadingDot2"></div>
+                <div class="loadingDot" id="loadingDot3"></div>
+            </div>
+        </div>
+    </div>
+    <!------------------------ LOADING ------------------------->
+
+    <!------------------------ GET STARTED FORM ------------------------->
+    <form id="getStartedForm" action="https://script.google.com/macros/s/AKfycbxs_2TQKpcQTB4ck6XopSbS96gf3aYofumO-c6C125Mxkw3XbPkW3KCFWrO2f3Qj99whg/exec" method="post">
+        <input type="text" name="CurrentUser" id="getStartedInput">
+    </form>
+    <!------------------------ GET STARTED FORM ------------------------->
+
+    <!------------------------ TOP BAR ------------------------->
+    <div class="topBar">
+        <div class="logo img"></div>
+        <div class="topBarContainer1">
+            <div class="font3 green cp" id="navBarButton1">Workouts</div>
+            <div class="font3 white cp" id="navBarButton2">Progress</div>
+            <div class="font3 grey cp">Sign Out</div>
+        </div>
+    </div>
+    <!------------------------ TOP BAR ------------------------->
+
+    <!------------------------ GET STARTED CONTAINER ------------------------->
+    <div class="container1" id="getStartedContainer">
+        <div class="container1a">
+            <div class="white font1">Welcome, <a id="username1">user</a></div>
+            <div class="grey font2 mt2">You don't have any workouts yet</div>
+            <div class="button1 mt3" id="getStartedButton">Get Started</div>
+        </div>
+    </div>
+    <!------------------------ GET STARTED CONTAINER ------------------------->
+
+    <!------------------------ CREATE WORKOUT CONTAINER ------------------------->
+    <div class="container2" id="createWorkoutContainer">
+        <div class="container2a">
+            <div class="font1 white">Create New Workout</div>
+            <form action="https://script.google.com/macros/s/AKfycbxs_2TQKpcQTB4ck6XopSbS96gf3aYofumO-c6C125Mxkw3XbPkW3KCFWrO2f3Qj99whg/exec" id="newWorkoutForm" method="post">
+                <input type="text" name="AmountOfExercisesInput" id="amountOfExercisesInput" class="hiddenInput">
+                <input type="text" name="CreateWorkoutUsername" id="createWorkoutUsername" class="hiddenInput">
+                <div class="mt3 grey font2">Name this workout</div>
+                <input type="text" class="mt1" name="NewWorkoutName" placeholder="Enter text here" required>
+                <div class="mt2 grey font2">Exercises</div>
+                <div class="newExerciseParentContainer" id="newExerciseParentContainer">
+                    <div class="newExerciseContainer mt1">
+                        <div class="exerciseLabelContainer">
+                            <div class="font3 grey exerciseLabel">Name</div>
+                            <input type="text" placeholder="Exercise name" name="ExerciseNameInput1" required>
+                        </div>
+                        <div class="exerciseLabelContainer">
+                            <div class="font3 grey exerciseLabel">Sets</div>
+                            <input type="text" class="smallInput" placeholder="X" name="ExerciseSetsInput1" required>
+                        </div>
+                        <div class="exerciseLabelContainer">
+                            <div class="font3 grey exerciseLabel">Reps</div>
+                            <input type="text" class="smallInput" placeholder="X" name="ExerciseRepsInput1" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="container2a1 mt3">
+                    <div class="button2" id="addNewExerciseButton">Add new</div>
+                    <div class="button4" id="removePreviousExerciseButton">Remove previous</div>
+                </div>
+                <div class="container2a2">
+                    <button type="submit" class="button5 font3" onclick="CreateWorkout()">Create Workout</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!------------------------ CREATE WORKOUT CONTAINER ------------------------->
+
+    <!------------------------ WORKOUTS CONTAINER ------------------------->
+    <div class="container3" id="workoutsContainer">
+        <div class="container3a">
+            <div class="white font1">Workouts</div>
+            <div id="workoutsParentContainer">
+                
+            </div>
+        </div>
+    </div>
+    <!------------------------ WORKOUTS CONTAINER ------------------------->
+
+    <!------------------------ PROGRESS CONTAINER ------------------------->
+    <div class="container4" id="progressContainer">
+        <div class="container4a">
+            <div class="white font1" id="progressTitle"></div>
+        </div>
+    </div>
+    <!------------------------ PROGRESS CONTAINER ------------------------->
+
+</body>
+<script src="main.js"></script>
+</html>

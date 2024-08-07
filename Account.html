@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="accountStyle.css">
+</head>
+<body>
+
+    <div id="loadingScreenCover">
+        <div id="loadingContainer">
+            <div class="font2 grey">Loading</div>
+            <div class="loadingDotsContainer">
+                <div class="loadingDot" id="loadingDot1"></div>
+                <div class="loadingDot" id="loadingDot2"></div>
+                <div class="loadingDot" id="loadingDot3"></div>
+            </div>
+        </div>
+    </div>
+
+    <form class="container1d1" id="signUpForm" action="https://script.google.com/macros/s/AKfycbxs_2TQKpcQTB4ck6XopSbS96gf3aYofumO-c6C125Mxkw3XbPkW3KCFWrO2f3Qj99whg/exec" method="post">
+        <div class="font1 white">Sign up</div>
+        <div class="font3 grey mt1">Username</div>
+        <input type="text" name="SignUpUsername" required>
+        <div class="font3 grey">Passord</div>
+        <input type="password" name="SignUpPassword" required>
+        <button type="submit" class="button3 mt3 font4">Sign up</button>
+        <div class="font5 grey mt1">Already have an account? <a class="green cp" onclick="LoginToggle()">Login here</a></div>
+    </form>
+    <form class="container1d1" id="loginForm" action="https://script.google.com/macros/s/AKfycbxs_2TQKpcQTB4ck6XopSbS96gf3aYofumO-c6C125Mxkw3XbPkW3KCFWrO2f3Qj99whg/exec" method="post">
+        <div class="font1 white">Login</div>
+        <div class="font3 grey mt1">Username</div>
+        <input type="text" name="LoginUsername" id="loginUsername" required>
+        <div class="font3 grey">Passord</div>
+        <input type="password" name="LoginPassword" required>
+        <button type="submit" class="button3 mt3 font4">Login</button>
+        <div class="font5 grey mt1">Don't have an account? <a class="green cp" onclick="SignUpToggle()">Sign up here</a></div>
+    </form>
+
+    <div class="img1 img"></div>
+    <div class="container1">
+        <div class="logo img">
+            <div class="font1 white logoText">FITSYNC</div>
+        </div>
+        <div class="container1a">
+            <div class="font2 grey">Sweat now, shine later</div>
+            <div class="font1 white">Start your journey today</div>
+            <div class="font5 green">Sign up or Login</div>
+        </div>
+        <div class="container1b">
+            <div class="button1 font3" onclick="SignUpToggle()">Sign up</div>
+            <div class="button2 font3 ml1" onclick="LoginToggle()">Log in</div>
+        </div>
+        <div id="accountManagerSmallScreenContainer"></div>
+        <div class="container1c">
+            <div class="font3 grey">Learn More</div>
+            <div class="font2 white">About</div>
+            <div class="font4 grey">FitSync is a free workout tool to help you plan and keep track of your workouts more effectivity while keeping track of your progress.</div>
+        </div>
+        <div class="container1d" id="accountManagerBigScreenContainer"></div>
+    </div>
+
+</body>
+<script src="account.js"></script>
+</html>

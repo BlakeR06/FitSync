@@ -1,0 +1,151 @@
+#getStartedForm{
+    visibility: hidden;
+    position: fixed;
+    pointer-events: none;
+}
+
+/*------------------- TOP BAR --------------------*/
+.topBar{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background-color: rgb(30, 30, 30);
+    width: 100%;
+    z-index: 1000;
+}
+
+.topBarContainer1{
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+}
+/*------------------- TOP BAR --------------------*/
+
+/*------------------- GET STARTED --------------------*/
+.container1{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+.container1a{
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: center;
+}
+/*------------------- GET STARTED --------------------*/
+
+/*------------------- CREATE WORKOUT --------------------*/
+.container2{
+    background-color: black;
+    width: 100%;
+    min-height: 80vh;
+    padding-bottom: 20vh;
+}
+
+.container2a{
+    padding-top: 20vh;
+    text-align: center;
+    position: relative;
+}
+
+.newExerciseContainer{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.smallInput{
+    width: 25px;
+}
+
+.exerciseLabelContainer{
+    display: flex;
+}
+
+.exerciseLabel{
+    margin-right: 10px;
+}
+
+.container2a1{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container2a2{
+    margin: 50px auto 0 auto;
+    width: 200px;
+}
+/*------------------- CREATE WORKOUT --------------------*/
+
+/*------------------- WORKOUTS --------------------*/
+.container3{
+    background-color: black;
+    width: 100%;
+    min-height: 80vh;
+    padding-bottom: 20vh;
+}
+
+.container3a{
+    padding-top: 20vh;
+    text-align: center;
+}
+
+.workoutContainer{
+    text-align: center;
+    border: 1px solid rgb(22, 192, 0);
+    border-radius: 30px;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    transition: background-color 0.2s ease;
+}
+.workoutContainer:hover{
+    background-color: rgb(50, 50, 50);
+}
+
+.editButtonContainer{
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    margin: 30px auto 0 auto;
+}
+.editButton{
+    background-image: url('edit.png');
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    background-color: rgb(50, 50, 50);
+    position: absolute;
+    top: 50%;
+    left: 115%;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.2s ease;
+}
+.editButton:hover{
+    background-color: gray;
+}
+/*------------------- WORKOUTS --------------------*/
+
+/*------------------- PROGRESS --------------------*/
+.container4{
+    background-color: black;
+    width: 100%;
+    min-height: 80vh;
+    padding-bottom: 20vh;
+    display: none;
+}
+
+.container4a{
+    padding-top: 20vh;
+    text-align: center;
+}
+/*------------------- PROGRESS --------------------*/
